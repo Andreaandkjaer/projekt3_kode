@@ -91,9 +91,10 @@ img{
 #about_me{
     background-color: #B9BE9F;
     grid-area: about_me;
+    width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
     padding-top: 10px;
@@ -102,14 +103,24 @@ img{
     .about_me_picture{
         background-color: #FFFAF0;
         padding: 10px;
-        margin: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .about_me_text{
         height: auto;
         width: 400px;
         color: #FFFAF0;
-        margin: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding: 10px;
+    }
+    @media screen and (min-width: 800px){
+        .about_me_picture{
+            margin: 30px;
+        }
+        .about_me_text{
+            margin: 30px;
+        }
     }
 #projects_menu{
     grid-area: projects_menu;
@@ -134,7 +145,7 @@ img{
         width: 400px;
         height: 400px;
         border-radius: 10px;
-        margin: 30px;
+        margin: 10px;
         background:url(pictures/illustrator.png)0 0 repeat;
         animation: play1 15s steps(3)infinite;
     }
@@ -144,7 +155,7 @@ img{
     }
     .illustrator_text{
         color: white;
-        margin: 30px;
+        margin: 10px;
         width: 400px;
         height: 200px;
     }
@@ -153,7 +164,7 @@ img{
         width: 400px;
         height: 400px;
         border-radius: 10px;
-        margin: 30px;
+        margin: 10px;
         background:url(pictures/products.png)0 0 repeat;
         animation: play2 10s steps(2)infinite;
     }
@@ -163,7 +174,7 @@ img{
     }
     .product_text{
         color: #FFFAF0;
-        margin: 30px;
+        margin: 10px;
         width: 400px;
         height: 200px;
     }
@@ -171,7 +182,7 @@ img{
         width: 400px;
         height: 400px;
         border-radius: 10px;
-        margin: 30px;
+        margin: 10px;
         background:url(pictures/)0 0 repeat;
         animation: play3 15s steps(3)infinite;
     }
@@ -182,7 +193,7 @@ img{
     
     .code_animation_text{
         color: white;
-        margin: 30px;
+        margin: 10px;
         width: 400px;
         height: 200px;
     }
@@ -191,7 +202,7 @@ img{
         width: 400px;
         height: 400px;
         border-radius: 10px;
-        margin: 30px;
+        margin: 10px;
         background:url(pictures/code_animation.png)0 0 repeat;
         animation: play4 15s steps(3)infinite;
     }
@@ -201,7 +212,7 @@ img{
     }
     .code_animation_text{
         color: white;
-        margin: 30px;
+        margin: 10px;
         width: 400px;
         height: 200px;
     }
@@ -209,7 +220,7 @@ img{
         width: 400px;
         height: 400px;
         border-radius: 10px;
-        margin: 30px;
+        margin: 10px;
         background:url(pictures/portraits.png)0 0 repeat;
         animation: play5 10s steps(2)infinite;
     }
@@ -219,7 +230,7 @@ img{
     }
     .portrait_text{
         color: #FFFAF0;
-        margin: 30px;
+        margin: 10px;
         width: 400px;
         height: 200px;
     }    
@@ -228,12 +239,12 @@ img{
         width: 400px;
         height: 400px;
         border-radius: 10px;
-        margin: 30px;
+        margin: 10px;
         background:url(pictures/coding.png)0 0 repeat;
     }
     .coding_text{
         color: #FFFAF0;
-        margin: 30px;
+        margin: 10px;
         width: 400px;
         height: 200px;
     }    
@@ -258,14 +269,24 @@ img{
     .contact_me_picture{
         background-color: #FFFAF0;
         padding: 10px;
-        margin: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
     .contact_me_text{
         height: auto;
         width: fit-content;
         color: #FFFAF0;
-        margin: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding: 10px;
+    }
+    @media screen and (min-width: 800px){
+        .contact_me_picture{
+            margin: 30px;
+        }
+        .contact_me_text{
+            margin: 30px;
+        }
     }
 .beam2{
     background-color: #B9BE9F;
