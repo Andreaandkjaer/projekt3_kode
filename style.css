@@ -153,7 +153,7 @@ img{
         100%{background-position:-1200px;}
     }
     .illustrator_text{
-        color: white;
+        color: #FFFAF0;
         margin: 10px;
         width: 400px;
         height: 200px;
@@ -205,7 +205,7 @@ img{
         100%{background-position:-1200px;}
     }
     .code_animation_text{
-        color: white;
+        color: #FFFAF0;
         margin: 10px;
         width: 400px;
         height: 200px;
