@@ -1,0 +1,292 @@
+html, body{
+    background-color: #d3d8b9;
+    height: auto;
+    margin: 0%;
+    scroll-behavior: smooth;
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header"
+    "front_picture"
+    "beam1"
+    "about_me"
+    "projects_menu"
+    "contact_me"
+    "beam2"
+    "footer";
+}
+header{
+    background-color: #B9BE9F;
+    grid-area: header;
+    height: auto;
+    width: 100%;
+    position: fixed;
+}
+    .menu{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 0%;
+        padding: 0%;
+        border-bottom: solid #FFFAF0;
+    }
+    .menu>li{
+        text-align: center;
+        font-size: 1em;
+        letter-spacing: 4px;
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        list-style: none;
+    }
+    a{
+        color: #FFFAF0;
+        text-decoration: none;
+    }
+    .menu>li:not(:first-child):hover{
+        background-color: #d3d8b9;
+        text-decoration: underline;
+    }
+    @media screen and (min-width: 800px){
+        .menu{
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+        .menu>li:not(:first-child){
+            padding-top: 60px;
+        }
+    }
+.front_picture{
+    background-color: #FFFAF0;
+    grid-area: front_picture;
+    height: fit-content;
+    width: 100%;
+    margin-top: 260px;
+    place-self: center;
+}
+img{
+    max-width: 100%;
+}
+    @media screen and (min-width: 800px){
+        .front_picture{
+            margin-top: 145px;
+        }
+    }
+.beam1{
+    background-color: #B9BE9F;
+    grid-area: beam1;
+    height: 100px;
+    text-align: center;
+}
+    .down{
+        border: solid #FFFAF0;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 20px;
+        margin: 5px;
+        transform: rotate(45deg);
+    }
+#about_me{
+    background-color: #B9BE9F;
+    grid-area: about_me;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 70px;
+}
+    .about_me_picture{
+        background-color: #FFFAF0;
+        padding: 10px;
+        margin: 30px;
+    }
+    .about_me_text{
+        height: auto;
+        width: 400px;
+        color: #FFFAF0;
+        margin: 30px;
+        padding: 10px;
+    }
+#projects_menu{
+    grid-area: projects_menu;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px 30px 0px;
+}
+    #projects_menu>a{
+        width: 350px;
+            height: 350px;
+            background-color: #FFFAF0;
+            text-align: center;
+            padding: 10px;
+            margin: 30px;
+    }
+
+    .illustrator_picture{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
+        background:url(pictures/illustrator.png)0 0 repeat;
+        animation: play1 15s steps(3)infinite;
+    }
+    @keyframes play1{
+        0%{background-position:0px;}
+        100%{background-position:-1200px;}
+    }
+    .illustrator_text{
+        color: white;
+        margin: 30px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .product_picture{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
+        background:url(pictures/products.png)0 0 repeat;
+        animation: play2 10s steps(2)infinite;
+    }
+    @keyframes play2{
+        0%{background-position:0px;}
+        100%{background-position:-800px;}
+    }
+    .product_text{
+        color: #FFFAF0;
+        margin: 30px;
+        width: 400px;
+        height: 200px;
+    }
+    .code_animation_picture{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
+        background:url(pictures/)0 0 repeat;
+        animation: play3 15s steps(3)infinite;
+    }
+    @keyframes play3{
+        0%{background-position:0px;}
+        100%{background-position:-1200px;}
+    }
+    
+    .code_animation_text{
+        color: white;
+        margin: 30px;
+        width: 400px;
+        height: 200px;
+    }
+    
+    .code_animation_picture{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
+        background:url(pictures/code_animation.png)0 0 repeat;
+        animation: play4 15s steps(3)infinite;
+    }
+    @keyframes play4{
+        0%{background-position:0px;}
+        100%{background-position:-1200px;}
+    }
+    .code_animation_text{
+        color: white;
+        margin: 30px;
+        width: 400px;
+        height: 200px;
+    }
+    .portrait_picture{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
+        background:url(pictures/portraits.png)0 0 repeat;
+        animation: play5 10s steps(2)infinite;
+    }
+    @keyframes play5{
+        0%{background-position:0px;}
+        100%{background-position:-800px;}
+    }
+    .portrait_text{
+        color: #FFFAF0;
+        margin: 30px;
+        width: 400px;
+        height: 200px;
+    }    
+    
+    .coding_picture{
+        width: 400px;
+        height: 400px;
+        border-radius: 10px;
+        margin: 30px;
+        background:url(pictures/coding.png)0 0 repeat;
+    }
+    .coding_text{
+        color: #FFFAF0;
+        margin: 30px;
+        width: 400px;
+        height: 200px;
+    }    
+
+.beam3{
+    background-color: #B9BE9F;
+    grid-area: beam3;
+    height: 100px;
+    text-align: center;
+}
+#contact_me{
+    background-color: #B9BE9F;
+    grid-area: contact_me;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+    .contact_me_picture{
+        background-color: #FFFAF0;
+        padding: 10px;
+        margin: 30px;
+    }
+    .contact_me_text{
+        height: auto;
+        width: fit-content;
+        color: #FFFAF0;
+        margin: 30px;
+        padding: 10px;
+    }
+.beam2{
+    background-color: #B9BE9F;
+    grid-area: beam2;
+    padding-bottom: 30px;
+    text-align: center;
+}
+    .up{
+        border: solid #FFFAF0;
+        border-width: 0 3px 3px 0;
+        padding: 15px;
+        transform: rotate(-135deg);
+        display: inline-block;
+    }
+footer{
+    background-color:#d3d8b9;
+    grid-area: footer;
+    height: fit-content;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    color: #FFFAF0;
+}
